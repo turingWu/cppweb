@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 """
 Django settings for cppweb project.
 
@@ -82,6 +83,25 @@ DATABASES = {
         'NAME': 'cppdb',
         'USER':'root',
         'PASSWORD':''
+import socket
+if socket.gethostname() == 'DXQCLAAB6GLF1XR':
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'cppdb',
+            'USER':'root',
+            'PASSWORD':''
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': '',
+            'USER':'',
+            'PASSWORD':''
+        }
     }
 }
 
