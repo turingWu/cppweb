@@ -76,13 +76,6 @@ WSGI_APPLICATION = 'cppweb.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cppdb',
-        'USER':'root',
-        'PASSWORD':''
 import socket
 if socket.gethostname() == 'DXQCLAAB6GLF1XR':
 
@@ -103,8 +96,6 @@ else:
             'PASSWORD':''
         }
     }
-}
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
