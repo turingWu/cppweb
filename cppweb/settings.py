@@ -99,6 +99,7 @@ else:
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
+AUTH_USER_MODEL = 'webapp.User'
 
 LANGUAGE_CODE = 'zh-hans'
 
